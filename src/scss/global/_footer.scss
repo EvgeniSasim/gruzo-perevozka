@@ -1,0 +1,179 @@
+footer.footer {
+  section.footer-info {
+    padding-top: 60px;
+    padding-bottom: 46px;
+    background: #ffc851;
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      @media (max-width: $xs) {
+        flex-direction: column;
+      }
+      .footer-navi {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 604px) {
+          min-width: 176px;
+          margin: 0 auto;
+        }
+        &__title {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 105.9%;
+          color: #343030;
+          display: flex;
+          align-items: center;
+          max-width: 240px;
+          color: #343030;
+          padding-bottom: 9px;
+          text-transform: uppercase;
+        }
+        &__list {
+          a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #343030;
+            &:hover {
+              color: #fff;
+            }
+          }
+          li:nth-child(-n + 2) {
+            padding-bottom: 10px;
+          }
+        }
+      }
+      .footer-contacts {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 604px) {
+          min-width: 176px;
+          margin: 0 auto;
+        }
+        &__title {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 105.9%;
+          color: #343030;
+          padding-bottom: 15px;
+          text-transform: uppercase;
+        }
+        &__list {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          a,
+          span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #343030;
+            &:hover {
+              color: #fff;
+            }
+          }
+          a:nth-child(-n + 3) {
+            padding-bottom: 7px;
+          }
+          div {
+            padding-bottom: 7px;
+          }
+        }
+      }
+      .footer-adress {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 604px) {
+          min-width: 176px;
+          margin: 0 auto;
+          flex: 0;
+        }
+        &__title {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 105.9%;
+          color: #343030;
+          padding-bottom: 15px;
+          text-transform: uppercase;
+        }
+        &__location {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          color: #343030;
+          display: flex;
+          flex-direction: column;
+          span:nth-child(-n + 3) {
+            padding-bottom: 7px;
+          }
+        }
+      }
+      .footer-socials {
+        display: flex;
+        flex-direction: column;
+        flex: 0.5;
+        @media (max-width: 808px) {
+          margin: 0 auto;
+        }
+        @media (max-width: 604px) {
+          flex: 0;
+        }
+        @media (max-width: $xs) {
+          margin: 0;
+        }
+        &__title {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 105.9%;
+          color: #343030;
+          padding-bottom: 25px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        &__icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          @media (max-width: 604px) {
+            justify-content: space-between;
+          }
+          @media (max-width: 490px) {
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
+  section.footer-section {
+    background: #030303;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      padding: 25px 0;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+    }
+  }
+}
